@@ -1,50 +1,81 @@
-# React + TypeScript + Vite
+Khalique Hussain
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To run this project locally, follow these steps:
 
-## Expanding the ESLint configuration
+### 1. Clone the Repository
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Start by cloning the repository to your local machine:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+git clone https://github.com/your-username/your-repo-name.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2. Navigate to the Project Directory
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Move into the project folder:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+cd your-repo-name
 ```
+
+### 3. Install Dependencies
+
+Install all the required dependencies using **npm** or **yarn**:
+
+```bash
+npm install
+# OR
+yarn install
+```
+
+## Getting Started
+
+After successfully installing the dependencies, start the development server:
+
+```bash
+npm run dev
+# OR
+yarn dev
+```
+
+This command starts a local development server. Open your browser and go to:
+
+```
+http://localhost:3000
+```
+
+## Scripts
+
+Here are some useful scripts you can use:
+
+- **`npm run dev`** - Starts the development server.
+- **`npm run build`** - Builds the production application.
+- **`npm start`** - Runs the production build.
+- **`npm run lint`** - Lints the code.
+
+## Deployment
+
+You can deploy this Next.js app using platforms like Vercel, Netlify, or your preferred hosting provider.
+
+For deploying on **Vercel** (recommended for Next.js apps):
+
+1. Install the Vercel CLI (if not already installed):
+
+   ```bash
+   npm i -g vercel
+   ```
+
+2. Deploy the app with:
+
+   ```bash
+   vercel
+   ```
+
+## Contributing
+
+If you would like to contribute to this project, feel free to submit pull requests or report issues. Contributions are always welcome!
+
+
