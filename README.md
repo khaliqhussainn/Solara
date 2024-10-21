@@ -10,7 +10,7 @@ To run this project locally, follow these steps:
 Start by cloning the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/khaliqhussainn/Solara
 ```
 
 ### 2. Navigate to the Project Directory
@@ -18,7 +18,7 @@ git clone https://github.com/your-username/your-repo-name.git
 Move into the project folder:
 
 ```bash
-cd your-repo-name
+cd Solara
 ```
 
 ### 3. Install Dependencies
